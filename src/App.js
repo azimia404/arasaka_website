@@ -2,6 +2,9 @@ import NavbarTop from "./NavbarTop";
 import NavbarLeft from "./NavbarLeft";
 import NavbarRight from "./NavbarRight";
 import React from "react";
+import ShopItemHeader from "./ShopItemHeader";
+import Shop from "./Shop";
+
 
 function App(){
     return (
@@ -9,7 +12,9 @@ function App(){
             <NavbarTop/>
             <div className="dd-grid">
                 <NavbarLeft/>
-                <main className="dd-grow-1"></main>
+                <main className="flex grow items-stretch flex-col *:h-full">
+                    <Shop></Shop>
+                </main>
                 <NavbarRight/>
             </div>
         </div>
