@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './Shop.css';
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
+import Shop from "./Shop";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
+        children: [{
+            path: "/Shop/:ItemId",
+            element: <Shop></Shop>
+        }],
     },
 ]);
 

@@ -5,6 +5,7 @@
 .Shop-Item-Landing {
     position: relative;
     height: calc(100vh - var(--nav_height) - 1px);
+    overflow: hidden;
 }
 
 .Shop-space {

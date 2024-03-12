@@ -107,6 +107,7 @@
 
 .Navbar-left-socials > *.current {
   color: var(--accent);
+  text-shadow: 0 0 0.75rem rgba(196, 30, 37, 0.5);
 }
 
 
@@ -144,6 +145,31 @@
   font-family: "Anta", sans-serif;
   color: var(--white);
   writing-mode: vertical-lr;
+}
+
+.Navbar-right-counter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  height: 40%;
+}
+
+.Navbar-right-counter  .Navbar-right-counter-item{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  font-family: "Anta", sans-serif;
+  color: rgba(122, 122, 122, 0.5);
+}
+
+.Navbar-right-counter  .Navbar-right-counter-current{
+  color: var(--white);
 }
 
 /*@media (prefers-reduced-motion: no-preference) {*/
