@@ -1,0 +1,70 @@
+.Shop {
+
+}
+
+.Shop-Item-Landing {
+    position: relative;
+    height: calc(100vh - var(--nav_height) - 1px);
+    overflow: hidden;
+}
+
+.Shop-space {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: clamp(10rem, 25%, 20rem);
+    padding: 0.5rem;
+}
+
+.Shop-space:before {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-bottom: var(--accent) 0.2rem solid;
+    border-left: var(--accent) 0.2rem solid;
+}
+
+.Shop-space:after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, var(--accent) 0%, var(--nav_border_color) 100%);
+}
+
+.Shop-Item-Banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 40%;
+    padding: 2rem;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6995305164319249) 0%, rgba(0,0,0,0) 100%);
+    border-bottom: var(--accent) var(--nav_border_size) solid;
+}
+
+.Shop-Item-Image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.Shop-shadow {
+    text-shadow: 0px 0px 0.5rem black;
+}
+
+.Shop-Learn-more{
+    display: block;
+    width: 50%;
+    margin-left: calc(var(--nav_height) * -0.5 - 2rem);
+    padding: 0.75rem;
+    padding-left: calc(var(--nav_height));
+    font-family: "Anta", sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+    background-image: linear-gradient(90deg, var(--accent) 0%, rgba(0, 0, 0, 0) 100%);
+}
